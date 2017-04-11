@@ -33,7 +33,8 @@ app.get('/animal/:animal', function (request, response) {
       title: animals[name].name,
       animal: animals[name],
       css: [
-        'master'
+        'master',
+        'styles'
       ]
     })
   }
@@ -42,15 +43,18 @@ app.get('/animal/:animal', function (request, response) {
 var animals = {
   seal: {
     name: 'Seal',
-    img: '/img/seal.jpg'
+    img: '/img/seal.jpg',
+    link: 'http://www.coolantarctica.com/gallery/seals/antarctica_seals1.php'
   },
   penguin: {
     name: 'Penguin',
-    img: '/img/penguin.jpg'
+    img: '/img/penguin.jpg',
+    link: 'http://www.coolantarctica.com/Antarctica%20fact%20file/wildlife/Emperor-penguins.php'
   },
   whale: {
     name: 'Whale',
-    img: '/img/whale.jpg'
+    img: '/img/whale.jpg',
+    link: 'http://www.coolantarctica.com/Antarctica%20fact%20file/wildlife/whales/whales.php'
   }
 }
 
