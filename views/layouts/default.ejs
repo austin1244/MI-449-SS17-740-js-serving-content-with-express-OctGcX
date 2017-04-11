@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+  <%- include("../partials/head.ejs") %>
+  <body>
+    <%- include("../pages/" + view) %>
+    <%  var scripts = scripts || [] %>
+    <%- helpers.loadScripts(scripts) %>
+  </body>
+</html>
