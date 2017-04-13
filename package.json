@@ -4,5 +4,13 @@
   "dependencies": {
     "ejs": "^2.5.6",
     "express": "^4.15.2"
+  },
+  "scripts": {
+    "lint:js": "standard"
+  },
+  "devDependencies": {
+    "standard": "^9.0.2",
+    "stylelint": "^7.10.1",
+    "stylelint-config-standard": "^16.0.0"
   }
 }

@@ -1,6 +1,11 @@
 <% include ../partials/header %>
 <main>
-  <a href="/animal/penguin/"><section>Penguin</section></a>
-  <a href="/animal/seal/"><section>Seal</section></a>
-  <a href="/animal/whale/"><section>Whale</section></a>
+  <% for (var animal in animals) {
+       if (animals.hasOwnProperty(animal)) {
+  %>
+  <a href="/animal/<%=animal%>/"><section><%=animals[animal].name%></section></a>
+  <%
+       }
+     }
+  %>
 </main>

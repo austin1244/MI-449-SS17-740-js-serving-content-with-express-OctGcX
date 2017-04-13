@@ -1,6 +1,9 @@
 <head>
   <meta charset="utf-8">
+
   <title><%=title%></title>
-  <%  var css = css || [] %>
-  <%- helpers.loadCSS(css) %>
+  <% var css = css || [] %>
+  <% css.forEach(function (el) { %>
+  <link rel='stylesheet' href='/css/<%=el%>.css'>
+  <% }) %>
 </head>

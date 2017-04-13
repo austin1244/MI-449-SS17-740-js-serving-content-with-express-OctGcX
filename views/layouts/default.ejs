@@ -3,7 +3,9 @@
   <%- include("../partials/head.ejs") %>
   <body>
     <%- include("../pages/" + view) %>
-    <%  var scripts = scripts || [] %>
-    <%- helpers.loadScripts(scripts) %>
+    <% var scripts = scripts || [] %>
+    <% scripts.forEach(function (el) { %>
+    <script src='/js/<%= el %>.js'></script>
+    <% }) %>
   </body>
 </html>
